@@ -1,0 +1,12 @@
+{
+  "name": "preppilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PrepPilot — AI Placement Assistant",
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css app.js manus-routes.json dist/"
+  }
+}

@@ -1,0 +1,10 @@
+# PrepPilot delivery checklist
+
+- **Dashboard and navigation:** Display the student's preparation score, coding progress, interview practice count, skill strengths, and weekly goals in a polished responsive SaaS dashboard; include working navigation for Dashboard, Interview Practice, Coding Practice, Resume Analyzer, Skill Tracker, Progress, and Settings; make the layout usable on laptops and phones.
+- **Interview practice:** Include HR, behavioral, and technical interview questions; let users choose categories, type answers, submit required answers, receive useful strengths and suggestions, and see transparent rule-based demo feedback when no AI API is configured.
+- **Coding practice:** Provide beginner Java, Python, and JavaScript questions with instructions, example inputs, expected outputs, and answer checking; validate required submissions and show success or error feedback without pretending to compile code.
+- **Resume analyzer:** Let users upload a resume or paste resume text; provide a skills summary, improvement suggestions, and a sample ATS-style score; clearly label simulated scoring because no real analysis service is connected; show useful empty, success, and error states.
+- **Skill tracker:** Track Java, DSA, communication, SQL, and problem-solving; let users update progress and persist those values.
+- **Progress page:** Show completed exercises, interview scores, preparation history, and useful empty states when the user has not created activity yet.
+- **Persistence and validation:** Save progress in browser storage so it remains after refreshing; validate required fields; provide clear success and error messages; include useful sample questions and demo data; do not require paid APIs or secret keys.
+- **Completion quality:** Do not leave placeholder buttons or unfinished pages; run the application, verify the route manifest, build, main forms, persistence, and responsive layout; provide publishing and GitHub upload instructions for a new public repository named `PrepPilot`.
