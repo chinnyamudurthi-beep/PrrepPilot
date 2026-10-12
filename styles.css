@@ -1,19 +1,19 @@
 :root {
-  --bg: #080d1b;
-  --surface: #10182a;
-  --surface-2: #151f35;
-  --surface-3: #1b2740;
-  --line: rgba(166, 184, 224, .12);
-  --text: #f5f7ff;
-  --muted: #8d9ab5;
-  --muted-2: #64738f;
-  --violet: #8b5cf6;
-  --violet-2: #a78bfa;
-  --blue: #5b9cff;
-  --mint: #4ed5b2;
-  --amber: #f8c76d;
-  --red: #f57c8e;
-  --shadow: 0 22px 70px rgba(0, 0, 0, .28);
+  --bg: #fffdf6;
+  --surface: #ffffff;
+  --surface-2: #fff8d9;
+  --surface-3: #fff0b3;
+  --line: rgba(165, 125, 15, .18);
+  --text: #4a3a20;
+  --muted: #75694e;
+  --muted-2: #9a8b6d;
+  --violet: #e9b817;
+  --violet-2: #f3c744;
+  --blue: #d49a18;
+  --mint: #3e9971;
+  --amber: #d79f1e;
+  --red: #c75b62;
+  --shadow: 0 22px 70px rgba(118, 86, 10, .16);
   --radius: 18px;
   --radius-sm: 12px;
   font-family: 'DM Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -284,3 +284,73 @@ input[type='range'] { width: 100%; accent-color: var(--violet); height: 5px; }
 @media (max-width: 820px) { .sidebar { position: fixed; left: -260px; transition: left .25s ease; box-shadow: var(--shadow); } .sidebar.open { left: 0; } .mobile-menu { display: grid; } .topbar { padding-left: 18px; padding-right: 18px; height: 65px; } .breadcrumbs { display: none; } .page-wrap { padding: 30px 18px 50px; } .stat-grid { grid-template-columns: repeat(2, 1fr); } .two-col, .practice-layout, .resume-layout { grid-template-columns: 1fr; } .question-list { grid-template-columns: repeat(3, 1fr); min-width: 0; } .question-list button { min-height: 88px; } }
 @media (max-width: 560px) { .topbar-actions { gap: 5px; } .topbar-actions .icon-button:first-of-type { display: none; } .streak-pill { padding: 7px 8px; } .page-header { display: block; } .page-header .primary-button { margin-top: 18px; width: 100%; } .hero-card, .score-card, .card { padding: 18px; } .hero-title { font-size: 24px; } .hero-meta { gap: 13px; flex-wrap: wrap; } .stat-card { min-height: 105px; padding: 14px; } .stat-value { font-size: 22px; } .question-list { display: flex; overflow-x: auto; padding-bottom: 4px; } .question-list button { min-width: 164px; min-height: auto; } .question-card { padding: 19px; } .question-text { font-size: 18px; } .feedback-grid, .code-prompt, .form-grid { grid-template-columns: 1fr; } .form-field.full { grid-column: auto; } .upload-zone { align-items: flex-start; flex-wrap: wrap; } .upload-zone label { margin-left: 48px; } .ats-score { align-items: flex-start; flex-direction: column; } .history-table { min-width: 520px; } .table-scroll { overflow-x: auto; } .setting-row { align-items: flex-start; } }
 @media (prefers-reduced-motion: reduce) { *, *:before, *:after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+
+/* Light white + sunflower theme */
+body { background: radial-gradient(circle at 78% -8%, rgba(243, 199, 68, .22), transparent 31rem), var(--bg); }
+.sidebar { background: rgba(255, 255, 255, .94); }
+.brand-mark { background: linear-gradient(145deg, #f5cf58, #e4a900); box-shadow: 0 8px 22px rgba(213, 157, 18, .25); }
+.brand-mark span { color: #5b4517; }
+.brand-mark:before, .brand-mark:after { border-color: rgba(91, 69, 23, .48); }
+.brand-mark:after { border-color: rgba(91, 69, 23, .62); }
+.brand-mark i { background: rgba(91, 69, 23, .7); }
+.workspace-chip { background: rgba(243, 199, 68, .12); }
+.nav-label { color: #a08e64; }
+.nav-item { color: #75694e; }
+.nav-item:hover { color: var(--text); background: rgba(243, 199, 68, .12); }
+.nav-item.active { color: #5b4517; background: linear-gradient(100deg, rgba(243, 199, 68, .34), rgba(243, 199, 68, .08)); box-shadow: inset 2px 0 0 var(--violet); }
+.nav-item.active .nav-icon { color: #bd8b0e; }
+.nav-item.active:after { background: #d79f1e; box-shadow: 0 0 12px rgba(215, 159, 30, .55); }
+.nav-new { color: #9a7107; background: rgba(243, 199, 68, .18); border-color: rgba(201, 149, 18, .28); }
+.upgrade-card { border-color: rgba(215, 159, 30, .28); background: radial-gradient(circle at 100% 0, rgba(243, 199, 68, .34), transparent 8rem), rgba(243, 199, 68, .12); }
+.upgrade-icon { background: rgba(243, 199, 68, .24); color: #aa7908; }
+.text-button, .link-button { color: #a87506; }
+.avatar { color: #5b4517; background: linear-gradient(145deg, #f5cf58, #dba315); box-shadow: inset 0 0 0 2px rgba(255,255,255,.68); }
+.topbar { background: rgba(255, 255, 255, .52); }
+.streak-pill { border-color: rgba(215, 159, 30, .25); background: rgba(243, 199, 68, .14); }
+.streak-pill span, .streak-pill strong { color: #b27f08; }
+.icon-button { color: #897955; }
+.icon-button:hover { color: #5b4517; border-color: var(--line); background: rgba(243, 199, 68, .12); }
+.primary-button { background: #efbd22; color: #4a3a20; box-shadow: 0 9px 24px rgba(215, 159, 30, .24); }
+.primary-button:hover { background: #f5ca43; }
+.secondary-button { background: rgba(243, 199, 68, .12); border-color: var(--line); color: #5b4517; }
+.secondary-button:hover, .ghost-button:hover { background: rgba(243, 199, 68, .22); }
+.hero-card { background: radial-gradient(circle at 88% 0, rgba(243, 199, 68, .35), transparent 21rem), linear-gradient(135deg, #fff8d9, #ffffff); }
+.hero-card:after { border-color: rgba(201, 154, 21, .18); box-shadow: 0 0 0 20px rgba(243, 199, 68, .08), 0 0 0 42px rgba(243, 199, 68, .05), 0 0 0 64px rgba(243, 199, 68, .035); }
+.hero-card .kicker, .question-number b { color: #a87506; }
+.score-card, .stat-card, .card { background: rgba(255, 255, 255, .92); }
+.score-card { box-shadow: 0 10px 34px rgba(118, 86, 10, .05); }
+.score-ring .track { stroke: rgba(215, 159, 30, .18); }
+.score-ring .progress { stroke: #e9b817; }
+.progress-track { background: #f7efcf; }
+.progress-fill { background: linear-gradient(90deg, #e2a90e, #f3c744); }
+.skill-row:nth-child(2) .progress-fill { background: linear-gradient(90deg, #cf9416, #f2c95d); }
+.skill-row:nth-child(3) .progress-fill { background: linear-gradient(90deg, #3e9971, #8dccad); }
+.skill-row:nth-child(4) .progress-fill { background: linear-gradient(90deg, #d79f1e, #f3cf66); }
+.skill-row:nth-child(5) .progress-fill { background: linear-gradient(90deg, #c58e22, #e7c65e); }
+.goal-item, .prompt-box { background: #fffdf5; }
+.goal-check { color: #3e9971; border-color: rgba(62, 153, 113, .3); background: rgba(62, 153, 113, .1); }
+.activity-icon { color: #a87506; background: rgba(243, 199, 68, .16); }
+.activity-icon.green { color: #3e9971; background: rgba(62, 153, 113, .1); }
+.activity-icon.blue { color: #b27f08; background: rgba(215, 159, 30, .12); }
+.form-field input, .form-field textarea, .form-field select { color: var(--text); background: #fffdf7; border-color: var(--line); }
+.form-field input:focus, .form-field textarea:focus, .form-field select:focus { border-color: rgba(215, 159, 30, .72); box-shadow: 0 0 0 3px rgba(243, 199, 68, .18); }
+.filter-tab { color: #897955; background: #fff8df; }
+.filter-tab:hover { color: #5b4517; }
+.filter-tab.active { color: #4a3a20; background: #efbd22; border-color: #efbd22; }
+.code-editor, .prompt-box code { color: #5b4b2d !important; }
+.upload-zone { border-color: rgba(215, 159, 30, .48); background: rgba(243, 199, 68, .12); }
+.upload-icon { background: rgba(243, 199, 68, .26); color: #a87506; }
+.upload-zone label { color: #a87506; border-color: rgba(215, 159, 30, .34); }
+.ats-dial .track { stroke: #f2e7ba; }
+.ats-dial .value { stroke: #d79f1e; }
+.skill-chip { color: #725a1d; background: rgba(243, 199, 68, .16); border-color: rgba(215, 159, 30, .22); }
+.chart-bar { background: linear-gradient(180deg, #f3c744, #dca512); }
+.score-badge { color: #3e9971; background: rgba(62, 153, 113, .09); border-color: rgba(62, 153, 113, .18); }
+.toggle { background: #eadfb9; }
+.toggle i { background: #bcae87; }
+.toggle.on { background: rgba(215, 159, 30, .66); }
+.modal-backdrop { background: rgba(91, 69, 23, .22); }
+.modal { background: #ffffff; }
+.toast { border-color: rgba(215, 159, 30, .3); background: #fff8df; color: #5b4517; }
+.toast.success { border-color: rgba(62, 153, 113, .28); }
+.toast.error { border-color: rgba(199, 91, 98, .32); color: #a4434e; }

@@ -6,22 +6,22 @@ PrepPilot is a responsive, client-side placement-preparation dashboard. It ships
 The page shell keeps navigation persistent while the active view changes in place. Feature modules share a small state model: profile preferences, skill levels, interview attempts, coding submissions, resume analysis, weekly goals, and activity history. This keeps dashboard summaries, progress history, and feedback consistent after refresh.
 
 ## Design direction
-- **Design movement:** Editorial SaaS dashboard with a soft “midnight workspace” mood: high-contrast dark surfaces, vivid violet instrumentation, and generous editorial spacing.
+- **Design movement:** Editorial SaaS dashboard with a bright “sunlit workspace” mood: white cards, warm cream accents, sunflower-yellow instrumentation, and generous editorial spacing.
 - **Core principles:** Focus over noise; progress made tangible; guided action; confident but kind feedback.
-- **Color philosophy:** Navy-black surfaces create a calm study environment; electric violet is PrepPilot’s ownable action color for momentum; blue and mint accents distinguish information from completion without turning the interface into a rainbow.
+- **Color philosophy:** White and cream surfaces keep the workspace open and approachable; sunflower yellow is PrepPilot’s ownable action color for momentum; warm brown text and green completion accents maintain readable hierarchy without using black.
 - **Layout paradigm:** A persistent rail anchors the product like a cockpit, while the main canvas uses asymmetric hero areas, split cards, and flowing activity panels instead of a generic centered grid.
-- **Signature elements:** A violet “PP” mark with a target/radar cue, score rings with orbital tick marks, and tiny uppercase section labels paired with bright metric numerals.
+- **Signature elements:** A golden “PP” mark with a target/radar cue, score rings with orbital tick marks, and tiny uppercase section labels paired with bright metric numerals.
 - **Interaction philosophy:** Every action gives immediate, human-readable feedback. Empty states explain the next move, saves are acknowledged with a toast, and demo intelligence is labeled rather than implied.
 - **Animation:** Use short 180–260ms ease-out transitions for cards, nav state, progress bars, and toasts. Keep motion functional: score rings reveal on load, feedback slides into view, and hover states lift surfaces by 2px. Respect reduced-motion preferences.
 - **Typography system:** Inter/system UI for body copy and controls, with a slightly heavier display weight for metrics and page titles. Uppercase 11px labels provide the editorial rhythm; body copy stays at 14–16px for scanability.
 - **Brand essence:** A focused AI-style placement coach for students who want every practice session to move their readiness forward. Personality: practical, encouraging, sharp.
 - **Brand voice:** Headlines are direct and motivating; CTAs are specific. Examples: “Turn practice into proof.” and “Run one more rep.”
 - **Wordmark & logo:** A compact rounded-square PP monogram with two concentric target arcs; the text lockup uses bold geometric letterforms, not a default logo font.
-- **Signature brand color:** PrepPilot Violet `#8B5CF6`.
+- **Signature brand color:** PrepPilot Sunflower `#EFBD22`.
 
 ## Project structure
 - `index.html` — accessible application shell, navigation, page templates, and modal/toast mount points.
-- `styles.css` — responsive midnight workspace visual system, card primitives, charts, forms, and mobile layout.
+- `styles.css` — responsive white-and-yellow visual system, card primitives, charts, forms, and mobile layout.
 - `app.js` — route state, localStorage persistence, demo datasets, render functions, event delegation, feedback rules, resume scoring, and validation.
 - `server.mjs` — dependency-free development/production static server honoring `PORT`.
 - `manus-routes.json` — complete page route manifest for the SPA.
